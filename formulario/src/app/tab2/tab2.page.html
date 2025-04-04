@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Configurações da Moto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Ion-range -->
+<ion-content [fullscreen]="true">
+
+  <ion-toolbar color="light">
+    <ion-title> Ajustes Gerais </ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-range labelPlacement="start" label="Velocidade Mínima (km/h)"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range labelPlacement="end" label="Velocidade Máxima (km/h)"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range labelPlacement="fixed" label="Aceleração (0-100 km/h)"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range labelPlacement="stacked" label="Consumo de Combustível (km/L)"></ion-range>
+    </ion-item>
+  </ion-list>
+
+  <br />
+
+  <ion-toolbar color="light">
+    <ion-title> Iluminação 💡</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-range aria-label="Brilho do Painel">
+        <ion-icon slot="start" name="moon-outline"></ion-icon>
+        <ion-icon slot="end" name="sunny-outline"></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <br />
+
+
+  <ion-toolbar color="light">
+    <ion-title> Outras Configurações </ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-range aria-label="Ajuste Personalizado" [pin]="true"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range aria-label="Faixa de Torque" [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range aria-label="Configuração com marcações" [ticks]="true" [snaps]="true" [min]="0" [max]="10"></ion-range>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
