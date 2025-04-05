@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Configurações da Moto
+      Ion-range
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
 
   <ion-toolbar color="light">
-    <ion-title> Ajustes Gerais </ion-title>
+    <ion-title> Ajustes Gerais - </ion-title>
   </ion-toolbar>
 
   <ion-list>
@@ -56,8 +56,10 @@
   <ion-list>
     <ion-item>
       <ion-range aria-label="Ajuste Personalizado" [pin]="true"></ion-range>
+      <!-- aria label -> a legenda não aparece visualmente no campo, ele ajuda na acessibilidade.
+      Se o leitor de tela estiver ativado o campo será lido. -->
     </ion-item>
-
+   
     <ion-item>
       <ion-range aria-label="Faixa de Torque" [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"></ion-range>
     </ion-item>
