@@ -6,10 +6,13 @@
   </ion-toolbar>
 </ion-header>
 
+<!-- //O formulário foi divido em várias seções de diferentes tipos de cadastros
+ para testar os variados tipos de inputs. -->
+
 <ion-content [fullscreen]="true">
 
   <ion-toolbar color="light">
-    <ion-title> Inputs </ion-title>
+    <ion-title> Cadastro de vaga </ion-title>
   </ion-toolbar>
 
 
@@ -40,10 +43,11 @@
       <!-- input com um valor já inserido no campo que não pode ser modificado e nem modificado -->
     </ion-item>
   </ion-list>
+  <br><br><br>
 
   <!-- Inputs do tipo "text", "password", "email", "number", "search", "tel", e "url" -->
   <ion-toolbar color="light">
-    <ion-title> Cadastro aplicativo </ion-title>
+    <ion-title> Cadastro em aplicativo </ion-title>
   </ion-toolbar>
 
   <ion-list>
@@ -68,7 +72,7 @@
         <ion-input label="Telefone" type="tel" placeholder="(xx)xxxxx-xxxx"></ion-input>
       </ion-item>
     </ion-list>
-  </ion-list>
+  </ion-list><br><br><br>
 
 
   <!-- Colocação de etiquetas -->
@@ -94,7 +98,7 @@
       <ion-input label="Código de Lançamento" labelPlacement="floating" placeholder="Ex: XJ-994"></ion-input>
     </ion-item>
 
-  </ion-list>
+  </ion-list><br><br><br>
 
   <!-- Colocação de etiquetas -->
   <ion-toolbar color="light">
@@ -112,7 +116,7 @@
       <ion-input aria-label="Email" value="gatinhosfofos@email.com"></ion-input>
     </ion-item>
 
-  </ion-list>
+  </ion-list><br><br><br>
 
   <!-- Opções de input -->
   <ion-toolbar color="light">
@@ -143,7 +147,7 @@
       <ion-input label="Códigos de Acesso da Nave" labelPlacement="stacked" type="password"
         placeholder="Digite a senha para acessar os sistemas">
       </ion-input>
-    </ion-item>
+    </ion-item><br><br><br>
 
 
 <!-- Cores no input -->
@@ -181,6 +185,12 @@
       <ion-input aria-label="Campo personalizado" placeholder="Campo personalizado" class="custom" helperText="Texto de ajuda"
     [counter]="true" [maxlength]="20"></ion-input>
     </ion-item>
-  </ion-list>
+  </ion-list><br><br>
+
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <ion-button color="success" style="width: 75px; height: 10px;">Enviar</ion-button>
+  </div>
+  <br><br>
+  
   
 </ion-content>
